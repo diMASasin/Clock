@@ -3,16 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mauiApp3="using:MauiApp3"
              x:Class="MauiApp3.MainPage"
-             x:DataType="mauiApp3:MainViewModel"
              BackgroundImageSource="Resources\Images\estriper.jpg"
              MinimumHeightRequest="400"
              MinimumWidthRequest="400">
 
-    <ContentPage.BindingContext>
-        <mauiApp3:MainViewModel/>
-    </ContentPage.BindingContext>
-
-    <!--<Label Text="{Binding Now, StringFormat='Время - {0:o}'}"></Label>-->
     <Grid ColumnDefinitions="*, 4*, *, *, 4*, *, *, *, 4*, *, *, 4*, *, *, *, 4*, *, *, 4*, *" ColumnSpacing="10" 
           RowDefinitions="*, 5*, *, 5*, *" RowSpacing="10" WidthRequest="-1" HeightRequest="-1"
           x:Name="myGrid">
